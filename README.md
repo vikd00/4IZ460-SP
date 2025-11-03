@@ -50,13 +50,19 @@ python -m venv .venv
 - **Windows (CMD):** `.venv\Scripts\activate.bat`
 - **macOS/Linux:** `source .venv/bin/activate`
 
-### 3. Install Dependencies
+### 3. Extract Data Files
+
+Unzip the data files in the `data/` folder:
+
+Verify the CSV files are extracted to `data/` folder.
+
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure VS Code
+### 5. Configure VS Code
 
 Create or update `.vscode/settings.json`:
 
@@ -68,7 +74,7 @@ Create or update `.vscode/settings.json`:
 }
 ```
 
-### 5. Open Jupyter Notebook
+### 6. Open Jupyter Notebook
 
 - Open `notebooks/analysis.ipynb` in VS Code
 - Select the `.venv` interpreter when prompted
@@ -97,5 +103,5 @@ See `requirements.txt` for full list.
 ## Notes
 
 - Virtual environment (`.venv/`) is not tracked in Git
-- Data files are included in the repository
+- **Data files are zipped** - Extract them to the `data/` folder before running analysis
 - Make sure to activate the virtual environment before running anything
